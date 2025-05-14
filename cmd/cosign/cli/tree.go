@@ -166,7 +166,7 @@ func TreeCmd(ctx context.Context, regOpts options.RegistryOptions, regExpOpts op
 	}
 
 	if len(scsaMap) == 0 && len(ociRelationsMap) == 0 {
-		fmt.Fprintf(os.Stdout, "No Supply Chain Security Related Artifacts artifacts found for image %s\n, start creating one with simply running"+
+		fmt.Fprintf(os.Stdout, "No Supply Chain Security Related Artifacts found for image %s,\n start creating one with simply running"+
 			"$ cosign sign <img>", ref.String())
 		return nil
 	}
